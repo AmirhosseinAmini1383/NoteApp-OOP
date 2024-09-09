@@ -157,10 +157,14 @@ body {
 .notes__list-trash {
   width: 35px;
   height: 35px;
-  background: #fff;
+  background: var(--mainWhite);
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--mainRed);
+}
+.notes__trashIcon {
+  width: 60%;
+  height: 60%;
 }
