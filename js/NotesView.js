@@ -64,11 +64,9 @@ export default class NotesView {
     notesContainer.innerHTML = "";
     let notesList = "";
     for (const note of notes) {
-      note.forEach((noteItem) => {
-        const { id, title, body, updated } = noteItem;
-        const html = this.#createListItemHTML(id, title, body, updated);
-        notesList += html;
-      });
+      const { id, title, body, updated } = note;
+      const html = this.#createListItemHTML(id, title, body, updated);
+      notesList += html;
     }
     notesContainer.innerHTML = notesList;
     notesContainer.querySelectorAll(".notes__list-item").forEach((noteItem) => {
